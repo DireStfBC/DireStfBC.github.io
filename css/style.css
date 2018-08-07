@@ -1,0 +1,40 @@
+body{
+    background-color: #efeded;
+}
+
+h1{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    color: #4495ff;
+
+}
+
+h2, h3, h4, h5, h6, h7{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.8vw;
+    color: #4495ff;
+}
+
+p{
+    font-family: 'Asap', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+a{
+    font-family: 'Asap', sans-serif;
+    font-size: 1.6vw;
+    color: black;
+    text-decoration: none;
+    transition: color 1s, font-size 0.5s;
+}
+
+a:hover{
+    color: #44ff9e;
+    font-size: 1.7vw;
+}
+
+ul{
+    
+}

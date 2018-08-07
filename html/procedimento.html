@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Base de Conhecimento Direcional Engenharia</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset= "utf-8">
+        <link rel="stylesheet" type="text/css" href="..\css\style.css">
+        <link href="https://fonts.googleapis.com/css?family=Asap|Varela+Round" rel="stylesheet"> 
+    
+        <script type="text/javascript" async>
+                //pega a parameter query
+                var parametros = window.location.search;
+                
+                window.onload= function(){
+                    if(parametros == "?desbloqueio"){
+                        document.getElementById("p-tutorial").innerHTML = "!!!1 - Passar toda a pasta DMREP para a pasta temp no C:<br>2 - Trocar para usuário administrador e executar o arquivo &quot;setup&quot;<br>3 - Depois de instalar o DIMEP, NÃO EXECUTAR O DIMEP, ir em propriedades da pasta &quot;Dimep&quot; criada dentro de Arquivos de Programas (Program Files) e clicar em Propriedades<br>4 - Clicar na aba Compartilhamento e depois na opção &quot;Compartilhamento Avançado...&quot; <br>5 - Marcar a opção &quot;Compartilhar pasta&quot; e depois clicar em permissões. Dê controle total à Todos.<br>6 - Criar uma pasta &quot;DIMEP&quot; no C: e dar controle total à Todos assim como na outra pasta<br>7 - NÃO EXECUTAR O DIMEP e reiniciar o computador<br>8 - Logar na máquina com login do usuário<br>9 - Pedir colaborador(a) para fazer um teste executando e configurando o DIMEP.";
+                    }
+                }
+        </script>
+    </head>
+    <body>
+        <div id="tutorial">
+            <h3>Tutorial:</h3>
+            <p id="p-tutorial">1 - Passar toda a pasta DMREP para a pasta temp no C:<br>
+            2 - Trocar para usuário administrador e executar o arquivo "setup"<br>
+            3 - Depois de instalar o DIMEP, NÃO EXECUTAR O DIMEP, ir em propriedades da pasta "Dimep" criada dentro de Arquivos de Programas (Program Files) e clicar em Propriedades<br>
+            4 - Clicar na aba Compartilhamento e depois na opção "Compartilhamento Avançado..." <br>
+            5 - Marcar a opção "Compartilhar pasta" e depois clicar em permissões. Dê controle total à Todos.<br>
+            6 - Criar uma pasta "DIMEP" no C: e dar controle total à Todos assim como na outra pasta<br>
+            7 - NÃO EXECUTAR O DIMEP e reiniciar o computador<br>
+            8 - Logar na máquina com login do usuário<br>
+            9 - Pedir colaborador(a) para fazer um teste executando e configurando o DIMEP.</p>
+        </div>
+        <div id="categorização">
+                <h3>Categorização:</h3>
+                <p>
+                    <p>Tipo: REQUISIÇÃO</p>
+                    <p>Categoria 1: SUPORTE</p>
+                    <p>Categoria 2: SOFTWARE</p>
+                    <p>Categoria 3: OUTROS PROGRAMAS</p>
+                    <p>Categoria 4: INSTALAÇÃO</p>
+                    <p>Serviço: SOLICITAÇÃO NOVO</p>
+                    <p>Para a Fila: SERVICE DESK</p>
+                    <p>Acordo de Nível de Serviço: SERVICE DESK::BAIXO 240::NORMAL</p>
+                </p>
+        </div>
+        <div id="texto">
+            <h3>Texto:</h3>
+            <p>
+                 DESCRIÇÃO DETALHADA DO PROBLEMA: Requisição de instalação do DIMEP.<br>
+                 DESCRIÇÃO DOS TESTES REALIZADOS: Realizada validação.<br>
+                RESULTADOS DOS TESTES REALIZADOS: Instalar DIMEP. 
+            </p>
+        <div id="fechamento">
+             <h3>Fechamento:</h3>
+                <p>
+                    DESCRIÇÃO DA ATIVIDADE SOLUCIONADORA: Realizada instalação do DIMEP conforme solicitado.<br>
+                    TESTES EFETUADOS: Realizado teste pelo usuário. <br>
+                    VALIDAÇÃO: Validado pelo usuário 
+                </p>
+        </div>
+    </body>
+</html>
