@@ -1,3 +1,12 @@
+/*
+Plugins de Banco, Refazer Perfil (Windows e Outlook), Certificado Digital
+
+Baixar certificado digital pelo site
+https://www.certisign.com.br/duvidas-suporte/downloads/tokens 
+de acordo com cartao de leito (UBS,OLINE)
+Depois só rodar o instalador
+*/
+
 var parametros = window.location.search;
 
 window.onload= function(){
@@ -80,12 +89,14 @@ window.onload= function(){
 
     //Mapear Unidade(s) de Rede
     else if(parametros == "?mapearUnidade"){
-        document.getElementById("p-tutorial").innerHTML = "1 - Vá até o menu Iniciar (logo do Windows no canto inferior esquerdo) e digite &quot;Comutador&quot; na barra de pesquisa. <br>2 - Trocar para usuário administrador e executar o arquivo &quot;setup&quot;<br>3 - Depois de instalar o DIMEP, NÃO EXECUTAR O DIMEP, ir em propriedades da pasta &quot;Dimep&quot; criada dentro de Arquivos de Programas (Program Files) e clicar em Propriedades<br>4 - Clicar na aba Compartilhamento e depois na opção &quot;Compartilhamento Avançado...&quot; <br>5 - Marcar a opção &quot;Compartilhar pasta&quot; e depois clicar em permissões. Dê controle total à Todos.<br>6 - Criar uma pasta &quot;DIMEP&quot; no C: e dar controle total à Todos assim como na outra pasta<br>7 - NÃO EXECUTAR O DIMEP e reiniciar o computador<br>8 - Logar na máquina com login do usuário<br>9 - Pedir colaborador(a) para fazer um teste executando e configurando o DIMEP."
+        document.getElementById("p-tutorial").innerHTML = "1 - Vá até o menu Iniciar (logo do Windows no canto inferior esquerdo) e digite &quot;Computador&quot; na barra de pesquisa. <br>2 - Nos resultados da pesquisa, clique em &quot;Computador&quot; (Windows 7) ou &quot;Meu Computador&quot; (Windows 10)<br>3 - Clique em &quot;Mapear Unidade de Rede&quot; na parte superior da jenela do Windows Explorer. Caso não veja a opção, clique na seta que aponta para baixo ou aperte cntrl + F1<br>4 - No campo &quot;Pasta:&quot;, digite o nome do servidor onde a pasta está. (&quot;\\serverprint01&quot; para pasta &quot;Público&quot; ou &quot;\\serverfs01&quot;para pasta &quot;Departamentos&quot;. Algumas pastas exclusivas de região ficam em outros servidores como &quot;\\serverfsrj01 para o Rio de Janeiro e &quot;\\serverfs01df&quot; para Brasília)<br>5 - Clique no &quot;+&quot; ao lado do servidor que você pesquisou e encontre a pasta que o usuário solicitou na lista que irá aparecer.<br>6 - Clique uma vez no nome da pasta para selecionar e clique em &quot;OK&quot;<br>7 - Clique em &quot;Concluir&quot;<br>8 - A pasta foi mapeada e irá aparecer em &quot;Dispositivos e Unidades&quot;. Peça ao usuário para tentar acessá-la e testar"
         
-        document.getElementById("p-categorização").innerHTML = "<p>Tipo: REQUISIÇÃO</p><p>Categoria 1: SUPORTE</p><p>Categoria 2: SOFTWARE</p><p>Categoria 3: OUTROS PROGRAMAS</p><p>Categoria 4: INSTALAÇÃO</p><p>Serviço: SOLICITAÇÃO NOVO</p><p>Para a Fila: SERVICE DESK</p><p>Acordo de Nível de Serviço: SERVICE DESK::BAIXO 240::NORMAL</p>"
+        document.getElementById("p-categorização").innerHTML = "<p>Tipo: REQUISIÇÃO</p><p>Categoria 1: SUPORTE</p><p>Categoria 2: SOFTWARE</p><p>Categoria 3: WINDOWS</p><p>Categoria 4: MAPEAR UNIDADE DE REDE</p><p>Serviço: SOLICITAÇÃO NOVO</p><p>Para a Fila: SERVICE DESK</p><p>Acordo de Nível de Serviço: SERVICE DESK::MEDIO 60::NORMAL</p>"
 
-        document.getElementById("p-texto").innerHTML = "DESCRIÇÃO DETALHADA DO PROBLEMA: Requisição de instalação do DIMEP.<br>DESCRIÇÃO DOS TESTES REALIZADOS: Realizada validação.<br>RESULTADOS DOS TESTES REALIZADOS: Instalar DIMEP. "
+        document.getElementById("p-texto").innerHTML = "DESCRIÇÃO DETALHADA DO PROBLEMA: Colaborador(a) solicita mapeamento da(s) unidade(s) de rede X.<br>DESCRIÇÃO DOS TESTES REALIZADOS: Realizada validação.<br>RESULTADOS DOS TESTES REALIZADOS: Realizar mapeamento."
 
-        document.getElementById("p-fechamento").innerHTML = "DESCRIÇÃO DA ATIVIDADE SOLUCIONADORA: Realizada instalação do DIMEP conforme solicitado.<br>TESTES EFETUADOS: Realizado teste pelo usuário. <br>VALIDAÇÃO: Validado pelo usuário"
+        document.getElementById("p-avisos").innerHTML = "Observação: Troque o &quot;X&quot; pela(s) pasta(s) que o usuário(a) solicitou."
+
+        document.getElementById("p-fechamento").innerHTML = "DESCRIÇÃO DA ATIVIDADE SOLUCIONADORA: Unidade(s) de rede mapeada(s) conforme solicitado.<br>TESTES EFETUADOS: Realizado teste pelo usuário(a). <br>VALIDAÇÃO: Validado pelo usuário(a)."
     }
 }
